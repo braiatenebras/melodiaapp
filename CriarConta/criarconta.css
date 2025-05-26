@@ -54,10 +54,23 @@ body {
 }
 
 @keyframes flutuarNota {
-    0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
-    10% { opacity: 0.3; }
-    90% { opacity: 0.3; }
-    100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.3;
+    }
+
+    90% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+    }
 }
 
 .container {
@@ -195,8 +208,13 @@ body {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Mensagens de feedback */
@@ -234,12 +252,22 @@ body {
 
 /* Animações */
 @keyframes slideIn {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    to { opacity: 0; transform: translateY(20px); }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 }
 
 .mensagem-sucesso.fade-out,
@@ -255,15 +283,15 @@ body {
         width: 36px;
         height: 36px;
     }
-    
+
     .caixa-login {
         padding: 30px 20px;
     }
-    
+
     .logo h1 {
         font-size: 28px;
     }
-    
+
     .grupo-input input {
         padding: 12px 12px 12px 40px;
     }

@@ -2,18 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melodia - Login</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melodia - Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-    <!-- seta de voltar -->
-    <a href="/index.html" class="voltar-link">
-        <i class="fas fa-arrow-left"></i>
-    </a>
+    <!-- fundo -->
     <div class="fundo-musical">
         <div class="nota-musical" style="--i:1"><i class="fas fa-music"></i></div>
         <div class="nota-musical" style="--i:2"><i class="fas fa-music"></i></div>
@@ -22,65 +19,118 @@
         <div class="nota-musical" style="--i:5"><i class="fas fa-music"></i></div>
     </div>
 
-    <div class="container">
-        <div class="caixa-login">
-            <div class="logo">
-                <i class="fas fa-headphones"></i>
-                <h1>Melodia</h1>
+    <!-- header -->
+    <header class="topo">
+        <div class="logo">
+            <i class="fas fa-headphones"></i>
+            <h1>Melodia</h1>
+        </div>
+        <!-- botões de cadastro -->
+        <div class="botoes">
+            <a href="/Login/login.html" class="btn entrar">Entrar</a>
+            <a href="CriarConta/criarconta.html" class="btn cadastrar">Cadastrar</a>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="#inicio" class="nav inicio">Inicio</a>
+            <a href="#sobre" class="nav sobre">Sobre</a>
+            <a href="#avaliações" class="nav avaliações">Avaliações</a>
+            <a href="#contato" class="nav contato">Contato</a>
+        </nav>
+
+
+    </header>
+
+    <!-- conteúdo principal -->
+    <main class="container" id="inicio">
+
+        <section class="apresentacao" id="sobre">
+            <h2>Bem-vindo ao Melodia</h2>
+            <p>O <strong>Melodia</strong> é um projeto criado com fins educacionais, desenvolvido para simular uma
+                plataforma de streaming musical moderna e interativa.</p>
+
+            <p>Este site foi idealizado como parte de uma atividade avaliativa escolar, unindo design, programação e
+                criatividade. Aqui, os usuários podem explorar um ambiente visualmente agradável e repleto de recursos
+                inspirados em serviços reais de música online.</p> 
+
+            <p>Embora não toque músicas reais neste momento, o Melodia representa um protótipo funcional que demonstra
+                conceitos como cadastro, login, interface responsiva e animações de fundo, tudo pensado para oferecer
+                uma experiência imersiva e envolvente.</p>
+
+            <p>Agora, faça parte dessa experiência e acesse esse website funcional agora!</p> <br>
+
+            <p>Nosso objetivo é proporcionar uma plataforma simples, porém eficiente, onde usuários possam se
+                familiarizar com as principais funcionalidades de um serviço de música digital.</p> 
+
+            <p>Além disso, o Melodia conta com um design moderno e responsivo que se adapta perfeitamente a diferentes
+                dispositivos, garantindo uma navegação fluida tanto em desktops quanto em smartphones e tablets.</p> 
+
+            <p>Estamos sempre buscando maneiras de melhorar o projeto e planejar futuras atualizações que incluem
+                integração com bibliotecas de músicas, criação de playlists personalizadas, e suporte a recomendações
+                inteligentes baseadas no gosto do usuário.</p> 
+
+            <p>Explore as funcionalidades já disponíveis, conheça as avaliações dos nossos usuários e entre em contato
+                para deixar suas sugestões e feedbacks.</p>
+
+
+            <div class="botoes-apresentação">
+                <a href="#avaliações" class="leiamais">LEIA MAIS</a>
+                <a href="#avaliações" class="comeceagora">COMECE AGORA</a>
             </div>
 
-            <p class="subtitulo">Milhões de músicas. Um só lugar.</p>
+            <div class="botoes-download">
+                <img src="assets/playstore.png" alt="Download Playstore" class="playstore">
+                <img src="assets/appstore.png" alt="Download Appstore" class="appstore">
+            </div>
 
-            <form class="formulario-login" id="formLogin">
-                <div class="grupo-input">
-                    <i class="fas fa-envelope icone"></i>
-                    <input type="text" id="email" placeholder="E-mail">
+        </section>
+
+
+        <!-- benefícios -->
+        <section class="beneficios">
+            <h2>Por que usar o Melodia?</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Facilidade e interface intuitiva</li>
+                <li><i class="fas fa-check-circle"></i> Crie e compartilhe suas playlists favoritas</li>
+                <li><i class="fas fa-check-circle"></i> Descubra músicas novas todos os dias</li>
+                <li><i class="fas fa-check-circle"></i> Experiência personalizada com base no seu gosto musical</li>
+            </ul>
+
+        </section>
+
+        <!-- depoimentos -->
+        <section class="depoimentos" id="avaliações">
+            <h2>O que dizem nossos usuários</h2>
+            <div class="cards-depoimentos">
+                <div class="card">
+                    <p>"Website nota 10! <br> Interface simples e fácil de usar. Consigo ouvir diversas músicas sem
+                        nenhuma dificuldade "</p>
+                    <span>-Mateus Maidel</span>
                 </div>
-
-                <div class="grupo-input">
-                    <i class="fas fa-lock icone"></i>
-                    <input type="password" id="senha" placeholder="Senha">
-                    <i class="fa-solid fa-eye alternar-senha" id="alternarSenha"></i>
+                <div class="card">
+                    <p>"As recomendações são incríveis. Sempre descubro algo novo que amo."</p>
+                    <span>-Pedro Guerrart</span>
                 </div>
-
-                <button type="submit" class="botao-login">Entrar</button>
-
-                <div class="divisor">
-                    <span>ou</span>
+                <div class="card">
+                    <p>"Me conectei com artistas independentes que eu jamais conheceria."</p>
+                    <span>- Ana Roberta </span>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <button type="button" class="botao-social google" id="btnGoogle">
-                    <i class="fab fa-google"></i> Continuar com Google
-                </button>
-
-                <button type="button" class="botao-social apple" id="btnApple">
-                    <i class="fab fa-apple"></i> Continuar com Apple
-                </button>
-
-                <div class="links">
-                    <a href="Esqueci a Senha/esqueciasenha.html">Esqueceu a senha?</a>
-                    <a href="Criar Conta/criarconta.html">Criar conta</a>
-                </div>
-            </form>
+    <!-- fodapé -->
+    <footer>
+        <div class="footer-content" id="contato">
+            <p>&copy; 2025 Melodia. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
         </div>
-    </div>
-
-    <script src="https://www.gstatic.com/firebasejs/11.8.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.8.0/firebase-auth-compat.js"></script>
-    <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyAHMHOFZGydLuBG7_8BHmt0wrX8LIELd3U",
-            authDomain: "melodiapessoal-8c5e8.firebaseapp.com",
-            projectId: "melodiapessoal-8c5e8",
-            storageBucket: "melodiapessoal-8c5e8.firebasestorage.app",
-            messagingSenderId: "773482235133",
-            appId: "1:773482235133:web:98f8cd730a0601d12daa94"
-        };
-        firebase.initializeApp(firebaseConfig);
-    </script>
-
+    </footer>
     <script src="script.js"></script>
-
 </body>
 
 </html>
