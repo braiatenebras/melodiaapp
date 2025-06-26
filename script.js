@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.1 // ativa quando 10% do elemento está visível
   });
 
-  const elementos = document.querySelectorAll('.beneficios, .depoimentos, .rodape, .contato');
+  const elementos = document.querySelectorAll('.beneficios, .depoimentos, .rodape, .contatos');
   elementos.forEach(el => observer.observe(el));
 });

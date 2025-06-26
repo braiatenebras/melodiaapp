@@ -149,7 +149,6 @@ body {
 
 /* CONTEÚDO PRINCIPAL */
 .container {
-    padding: 30px 10px;
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
@@ -281,11 +280,68 @@ section h2 {
     font-weight: bold;
 }
 
+/* seção de contatos */
+.contatos {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+.contatos h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.contatos p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #c3b9ff;
+}
+
+.contatos form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.contatos label {
+    margin-bottom: 10px;
+    color: #c3b9ff;
+}
+
+.contatos input,
+.contatos textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    color: #c3b9ff;
+}
+
+.contatos textarea {
+    resize: none;
+}
+
+.contatos button {
+    background: #9c27b0;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 
 /* ANIMAÇÃO DE ENTRADA */
 .beneficios,
 .depoimentos,
-.rodape {
+.rodape,
+.contatos {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -294,7 +350,8 @@ section h2 {
 
 .beneficios.visivel,
 .depoimentos.visivel,
-.rodape.visivel {
+.rodape.visivel,
+.contatos.visivel {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -316,10 +373,6 @@ section h2 {
     gap: 20px;
     max-width: 1200px;
     margin: auto;
-}
-
-.coluna {
-    flex: 1 1 200px;
 }
 
 .coluna h4 {
@@ -424,6 +477,10 @@ section h2 {
     .botoes-download img {
         width: 200px;
     }
+
+    .contatos form {
+        max-width: 80%;
+    }
 }
 
 /* CELULARES MÉDIOS */
@@ -436,11 +493,6 @@ section h2 {
     .comeceagora {
         padding: 12px 24px;
         font-size: 15px;
-    }
-
-    .navbar {
-        grid-template-columns: 1fr;
-        max-width: 100%;
     }
 
     .botoes-download img {
@@ -488,5 +540,10 @@ section h2 {
     .apresentacao {
         margin-bottom: 40px;
         top: 10px;
+    }
+
+    .coluna {
+        width: 100%;
+        text-align: center;
     }
 }
