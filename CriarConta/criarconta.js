@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     inputTelefone.addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, '');
         let formatted = '';
-
         if (value.length > 0) formatted = `(${value.substring(0, 2)}`;
         if (value.length > 2) formatted += `) ${value.substring(2, 7)}`;
         if (value.length > 7) formatted += `-${value.substring(7, 11)}`;
